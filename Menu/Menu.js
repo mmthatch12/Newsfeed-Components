@@ -9,10 +9,15 @@ let menuItems = [
   'Log Out'
 ];
 
+const headr = document.querySelector('.header')
+
+headr.appendChild(menucomp(menuItems))
 
 
+function menucomp(arr) {
+  
+  const menuButton = document.querySelector('.menu-button')
 
-function menucomp(array) {
   //define new elements
   const menuDiv = document.createElement('div')
   const menuUl = document.createElement('ul')
@@ -25,11 +30,20 @@ function menucomp(array) {
   //set class names
   menuDiv.classList.add('menu')
 
-  array.forEach(li => {
-    li.menuUl.appendChild(menuLi)
-  });
+  let lis = menuItems.length;
 
-  const menuButton = document.querySelector('.menu-button')
+  for (let i = 0; i < lis; i++){
+    const menuLi = document.createElement('li')
+    menuLi.textContent = menuItems[i]
+    menuUl.appendChild(menuLi)
+  }
+
+  // menuItems.forEach(item => {
+  //   menuLi.textContent = menuItems[item]
+  //   menuUl.appendChild(menuLi)
+  // })
+
+
 
   menuButton.addEventListener('click', event => {
     menuDiv.classList.toggle('menu--open')
