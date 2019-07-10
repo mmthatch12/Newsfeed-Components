@@ -31,9 +31,11 @@ function menucomp(array) {
 
   const menuButton = document.querySelector('.menu-button')
 
+  menuButton.addEventListener('click', event => {
+    menuDiv.classList.toggle('menu--open')
+  })
 
-
-    
+  return menuDiv
 }
 
 
