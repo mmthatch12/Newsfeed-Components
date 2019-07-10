@@ -9,9 +9,9 @@ let menuItems = [
   'Log Out'
 ];
 
-/* 
+/*
 
-  Step 1: Write a function that will create a menu component as seen below:
+ Step 1: Write a function that will create a menu component as seen below:
 
   <div class="menu">
     <ul>
