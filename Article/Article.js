@@ -92,7 +92,7 @@ const data = [
   
   const articles = document.querySelector('.articles')
 
-  function component(){
+  function component(title, content){
     //define new elements
     const articleDiv = document.createElement('div');
     const articleTitle = document.createElement('h2');
@@ -109,7 +109,10 @@ const data = [
     articleP.classList.add('date')
     articleSpan.classList.add('expandButton')
 
-    
+    //set text content
+    articleSpan.textContent = 'Expand'
+    articleTitle.textContent = title
+    articleP.textContent = content
 
   }
 
