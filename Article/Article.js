@@ -115,7 +115,7 @@ const data = [
     articleDiv.appendChild(articleSpan)
 
     //set class names
-    articleDiv.classList.add('article', 'article-open')
+    articleDiv.classList.add('article', 'close', 'article-open')
     articleDate.classList.add('date')
     articleSpan.classList.add('expandButton')
 
