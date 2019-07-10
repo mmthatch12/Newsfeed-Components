@@ -111,7 +111,7 @@ const data = [
 
     //set class names
     articleDiv.classList.add('article')
-    articleP.classList.add('date')
+    articleP.classList.add('date', 'article-open')
     articleSpan.classList.add('expandButton')
 
     //set text content
@@ -121,8 +121,7 @@ const data = [
 
     //span event
     articleSpan.addEventListener('click', event => {
-      articleSpan.classList.toggle('expandButton')
-      articleP.classList.toggle('article-open')
+      articleDiv.classList.toggle('article-open')
     })
 
     return articleDiv
