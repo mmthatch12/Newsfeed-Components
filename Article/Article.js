@@ -96,27 +96,36 @@ const data = [
     articles.appendChild(component(art.title, art.date, art.firstParagraph, art.secondParagraph, art.thirdParagraph))
   })
 
-  function component(title, content){
+  function component(title, date, cont1, cont2, cont3){
     //define new elements
     const articleDiv = document.createElement('div');
     const articleTitle = document.createElement('h2');
-    const articleP = document.createElement('p');
+    const articleDate = document.createElement('p');
+    const articleCont1 = document.createElement('p')
+    const articleCont2 = document.createElement('p')
+    const articleCont3 = document.createElement('p')
     const articleSpan = document.createElement('span');
 
     //Setup structure of elements
     articleDiv.appendChild(articleTitle)
-    articleDiv.appendChild(articleP)
+    articleDiv.appendChild(articleDate)
+    articleDiv.appendChild(articleCont1)
+    articleDiv.appendChild(articleCont2)
+    articleDiv.appendChild(articleCont3)
     articleDiv.appendChild(articleSpan)
 
     //set class names
-    articleDiv.classList.add('article')
-    articleP.classList.add('date', 'article-open')
+    articleDiv.classList.add('article', 'article-open')
+    articleDate.classList.add('date')
     articleSpan.classList.add('expandButton')
 
     //set text content
     articleSpan.textContent = 'Expand'
     articleTitle.textContent = title
-    articleP.textContent = content
+    articleDate.textContent = date
+    articleCont1.textContent = cont1
+    articleCont2.textContent = cont2
+    articleCont3.textContent = cont3
 
     //span event
     articleSpan.addEventListener('click', event => {
