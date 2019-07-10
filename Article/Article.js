@@ -92,9 +92,8 @@ const data = [
   
   const articles = document.querySelector('.articles')
 
-
-  data.forEach(datas => {
-    articles.appendChild(component(datas.title, datas.date))
+  data.map(art => {
+    articles.appendChild(component(art.title, art.date, art.firstParagraph, art.secondParagraph, art.thirdParagraph))
   })
 
   function component(title, content){
@@ -142,7 +141,7 @@ const data = [
 
   // Step 2: Add an event listener to the expandButton span. This event listener should toggle the class 'article-open' on the 'article' div.
 
-  // Step 3: return the entire component.
+  // Step 3: return the entire component. 
 
   // Step 4: Map over the data, creating a component for each oject and add each component to the DOM as children of the 'articles' div.
 
