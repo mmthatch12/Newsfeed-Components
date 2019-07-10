@@ -114,6 +114,11 @@ const data = [
     articleTitle.textContent = title
     articleP.textContent = content
 
+    //span event
+    articleSpan.addEventListener('click', event => {
+      articleSpan.classList.toggle('expandButton')
+      articleP.classList.toggle('article-open')
+    })
   }
 
   // <div class="article">
