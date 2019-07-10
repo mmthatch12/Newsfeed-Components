@@ -92,6 +92,11 @@ const data = [
   
   const articles = document.querySelector('.articles')
 
+
+  data.forEach(datas => {
+    articles.appendChild(component(datas.title, datas.date))
+  })
+
   function component(title, content){
     //define new elements
     const articleDiv = document.createElement('div');
@@ -119,6 +124,8 @@ const data = [
       articleSpan.classList.toggle('expandButton')
       articleP.classList.toggle('article-open')
     })
+
+    return articleDiv
   }
 
   // <div class="article">
