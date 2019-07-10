@@ -93,14 +93,23 @@ const data = [
   const articles = document.querySelector('.articles')
 
   function component(){
+    //define new elements
     const articleDiv = document.createElement('div');
     const articleTitle = document.createElement('h2');
     const articleP = document.createElement('p');
     const articleSpan = document.createElement('span');
 
+    //Setup structure of elements
     articleDiv.appendChild(articleTitle)
     articleDiv.appendChild(articleP)
     articleDiv.appendChild(articleSpan)
+
+    //set class names
+    articleDiv.classList.add('article')
+    articleP.classList.add('date')
+    articleSpan.classList.add('expandButton')
+
+    
 
   }
 
