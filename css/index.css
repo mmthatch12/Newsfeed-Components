@@ -35,47 +35,9 @@
   margin: 0;
   font-size: 48px;
 }
-<<<<<<< HEAD:css/index.css
 .articles {
   margin-top: 95px;
 }
-=======
-.menu-button {
-  position: absolute;
-  left: 20px;
-  cursor: pointer;
-}
-.menu {
-  display: none;
-  position: fixed;
-  top: 75px;
-  left: 0;
-  width: 350px;
-  height: 100vh;
-  /* This give the height 100% of the screen or, '100% of View Height' */
-  background-color: #81C784;
-  border: 1px solid #004D40;
-  border-left: none;
-  border-bottom: none;
-  z-index: 2;
-  /* This set the layer level of the element, it has precendence over initial level of 1*/
-}
-.menu ul li {
-  list-style-type: none;
-  font-size: 32px;
-  padding: 30px 0;
-  text-align: center;
-}
-.menu--open {
-  display: block;
-}
-.articles {
-  margin-top: 95px;
-}
-.articles img {
-  transform: rotate(0.5turn);
-}
->>>>>>> f7ba52504bfa2cecb7021853eb08c3a98ae7fcc9:CSS/index.css
 .article {
   margin: 20px 10%;
   padding: 0 20px 25px;
@@ -91,21 +53,6 @@
   font-size: 28px;
   padding: 0;
   margin: 15px 0 0;
-<<<<<<< HEAD:css/index.css
-=======
-  animation: pulse 5s infinite;
-}
-@keyframes pulse {
-  30% {
-    color: yellow;
-  }
-  50% {
-    color: blue;
-  }
-  80% {
-    color: orange;
-  }
->>>>>>> f7ba52504bfa2cecb7021853eb08c3a98ae7fcc9:CSS/index.css
 }
 .article .date {
   margin: 0;
